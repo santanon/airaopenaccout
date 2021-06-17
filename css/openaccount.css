@@ -1,0 +1,1257 @@
+@font-face {
+  font-family: 'psl_kittithada_proregular';
+  src: url("../fonts/psl094pro.woff2") format("woff2"), url("../fonts/psl094pro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'psl_kittithada_probold';
+  src: url("../fonts/psl096pro.woff2") format("woff2"), url("../fonts/psl096pro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden],
+template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+a {
+  color: #337ab7;
+  text-decoration: none; }
+  a:hover, a:focus {
+    color: #23527c;
+    text-decoration: underline; }
+  a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+
+figure {
+  margin: 0; }
+
+img {
+  vertical-align: middle; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.img-rounded {
+  border-radius: 6px; }
+
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto; }
+
+.img-circle {
+  border-radius: 50%; }
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto; }
+
+[role="button"] {
+  cursor: pointer; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .container-fluid:before, .container-fluid:after {
+    content: " ";
+    display: table; }
+  .container-fluid:after {
+    clear: both; }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left; }
+
+.col-xs-1 {
+  width: 8.33333%; }
+
+.col-xs-2 {
+  width: 16.66667%; }
+
+.col-xs-3 {
+  width: 25%; }
+
+.col-xs-4 {
+  width: 33.33333%; }
+
+.col-xs-5 {
+  width: 41.66667%; }
+
+.col-xs-6 {
+  width: 50%; }
+
+.col-xs-7 {
+  width: 58.33333%; }
+
+.col-xs-8 {
+  width: 66.66667%; }
+
+.col-xs-9 {
+  width: 75%; }
+
+.col-xs-10 {
+  width: 83.33333%; }
+
+.col-xs-11 {
+  width: 91.66667%; }
+
+.col-xs-12 {
+  width: 100%; }
+
+.col-xs-pull-0 {
+  right: auto; }
+
+.col-xs-pull-1 {
+  right: 8.33333%; }
+
+.col-xs-pull-2 {
+  right: 16.66667%; }
+
+.col-xs-pull-3 {
+  right: 25%; }
+
+.col-xs-pull-4 {
+  right: 33.33333%; }
+
+.col-xs-pull-5 {
+  right: 41.66667%; }
+
+.col-xs-pull-6 {
+  right: 50%; }
+
+.col-xs-pull-7 {
+  right: 58.33333%; }
+
+.col-xs-pull-8 {
+  right: 66.66667%; }
+
+.col-xs-pull-9 {
+  right: 75%; }
+
+.col-xs-pull-10 {
+  right: 83.33333%; }
+
+.col-xs-pull-11 {
+  right: 91.66667%; }
+
+.col-xs-pull-12 {
+  right: 100%; }
+
+.col-xs-push-0 {
+  left: auto; }
+
+.col-xs-push-1 {
+  left: 8.33333%; }
+
+.col-xs-push-2 {
+  left: 16.66667%; }
+
+.col-xs-push-3 {
+  left: 25%; }
+
+.col-xs-push-4 {
+  left: 33.33333%; }
+
+.col-xs-push-5 {
+  left: 41.66667%; }
+
+.col-xs-push-6 {
+  left: 50%; }
+
+.col-xs-push-7 {
+  left: 58.33333%; }
+
+.col-xs-push-8 {
+  left: 66.66667%; }
+
+.col-xs-push-9 {
+  left: 75%; }
+
+.col-xs-push-10 {
+  left: 83.33333%; }
+
+.col-xs-push-11 {
+  left: 91.66667%; }
+
+.col-xs-push-12 {
+  left: 100%; }
+
+.col-xs-offset-0 {
+  margin-left: 0%; }
+
+.col-xs-offset-1 {
+  margin-left: 8.33333%; }
+
+.col-xs-offset-2 {
+  margin-left: 16.66667%; }
+
+.col-xs-offset-3 {
+  margin-left: 25%; }
+
+.col-xs-offset-4 {
+  margin-left: 33.33333%; }
+
+.col-xs-offset-5 {
+  margin-left: 41.66667%; }
+
+.col-xs-offset-6 {
+  margin-left: 50%; }
+
+.col-xs-offset-7 {
+  margin-left: 58.33333%; }
+
+.col-xs-offset-8 {
+  margin-left: 66.66667%; }
+
+.col-xs-offset-9 {
+  margin-left: 75%; }
+
+.col-xs-offset-10 {
+  margin-left: 83.33333%; }
+
+.col-xs-offset-11 {
+  margin-left: 91.66667%; }
+
+.col-xs-offset-12 {
+  margin-left: 100%; }
+
+@media (min-width: 768px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left; }
+  .col-sm-1 {
+    width: 8.33333%; }
+  .col-sm-2 {
+    width: 16.66667%; }
+  .col-sm-3 {
+    width: 25%; }
+  .col-sm-4 {
+    width: 33.33333%; }
+  .col-sm-5 {
+    width: 41.66667%; }
+  .col-sm-6 {
+    width: 50%; }
+  .col-sm-7 {
+    width: 58.33333%; }
+  .col-sm-8 {
+    width: 66.66667%; }
+  .col-sm-9 {
+    width: 75%; }
+  .col-sm-10 {
+    width: 83.33333%; }
+  .col-sm-11 {
+    width: 91.66667%; }
+  .col-sm-12 {
+    width: 100%; }
+  .col-sm-pull-0 {
+    right: auto; }
+  .col-sm-pull-1 {
+    right: 8.33333%; }
+  .col-sm-pull-2 {
+    right: 16.66667%; }
+  .col-sm-pull-3 {
+    right: 25%; }
+  .col-sm-pull-4 {
+    right: 33.33333%; }
+  .col-sm-pull-5 {
+    right: 41.66667%; }
+  .col-sm-pull-6 {
+    right: 50%; }
+  .col-sm-pull-7 {
+    right: 58.33333%; }
+  .col-sm-pull-8 {
+    right: 66.66667%; }
+  .col-sm-pull-9 {
+    right: 75%; }
+  .col-sm-pull-10 {
+    right: 83.33333%; }
+  .col-sm-pull-11 {
+    right: 91.66667%; }
+  .col-sm-pull-12 {
+    right: 100%; }
+  .col-sm-push-0 {
+    left: auto; }
+  .col-sm-push-1 {
+    left: 8.33333%; }
+  .col-sm-push-2 {
+    left: 16.66667%; }
+  .col-sm-push-3 {
+    left: 25%; }
+  .col-sm-push-4 {
+    left: 33.33333%; }
+  .col-sm-push-5 {
+    left: 41.66667%; }
+  .col-sm-push-6 {
+    left: 50%; }
+  .col-sm-push-7 {
+    left: 58.33333%; }
+  .col-sm-push-8 {
+    left: 66.66667%; }
+  .col-sm-push-9 {
+    left: 75%; }
+  .col-sm-push-10 {
+    left: 83.33333%; }
+  .col-sm-push-11 {
+    left: 91.66667%; }
+  .col-sm-push-12 {
+    left: 100%; }
+  .col-sm-offset-0 {
+    margin-left: 0%; }
+  .col-sm-offset-1 {
+    margin-left: 8.33333%; }
+  .col-sm-offset-2 {
+    margin-left: 16.66667%; }
+  .col-sm-offset-3 {
+    margin-left: 25%; }
+  .col-sm-offset-4 {
+    margin-left: 33.33333%; }
+  .col-sm-offset-5 {
+    margin-left: 41.66667%; }
+  .col-sm-offset-6 {
+    margin-left: 50%; }
+  .col-sm-offset-7 {
+    margin-left: 58.33333%; }
+  .col-sm-offset-8 {
+    margin-left: 66.66667%; }
+  .col-sm-offset-9 {
+    margin-left: 75%; }
+  .col-sm-offset-10 {
+    margin-left: 83.33333%; }
+  .col-sm-offset-11 {
+    margin-left: 91.66667%; }
+  .col-sm-offset-12 {
+    margin-left: 100%; } }
+
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left; }
+  .col-md-1 {
+    width: 8.33333%; }
+  .col-md-2 {
+    width: 16.66667%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-4 {
+    width: 33.33333%; }
+  .col-md-5 {
+    width: 41.66667%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-7 {
+    width: 58.33333%; }
+  .col-md-8 {
+    width: 66.66667%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-10 {
+    width: 83.33333%; }
+  .col-md-11 {
+    width: 91.66667%; }
+  .col-md-12 {
+    width: 100%; }
+  .col-md-pull-0 {
+    right: auto; }
+  .col-md-pull-1 {
+    right: 8.33333%; }
+  .col-md-pull-2 {
+    right: 16.66667%; }
+  .col-md-pull-3 {
+    right: 25%; }
+  .col-md-pull-4 {
+    right: 33.33333%; }
+  .col-md-pull-5 {
+    right: 41.66667%; }
+  .col-md-pull-6 {
+    right: 50%; }
+  .col-md-pull-7 {
+    right: 58.33333%; }
+  .col-md-pull-8 {
+    right: 66.66667%; }
+  .col-md-pull-9 {
+    right: 75%; }
+  .col-md-pull-10 {
+    right: 83.33333%; }
+  .col-md-pull-11 {
+    right: 91.66667%; }
+  .col-md-pull-12 {
+    right: 100%; }
+  .col-md-push-0 {
+    left: auto; }
+  .col-md-push-1 {
+    left: 8.33333%; }
+  .col-md-push-2 {
+    left: 16.66667%; }
+  .col-md-push-3 {
+    left: 25%; }
+  .col-md-push-4 {
+    left: 33.33333%; }
+  .col-md-push-5 {
+    left: 41.66667%; }
+  .col-md-push-6 {
+    left: 50%; }
+  .col-md-push-7 {
+    left: 58.33333%; }
+  .col-md-push-8 {
+    left: 66.66667%; }
+  .col-md-push-9 {
+    left: 75%; }
+  .col-md-push-10 {
+    left: 83.33333%; }
+  .col-md-push-11 {
+    left: 91.66667%; }
+  .col-md-push-12 {
+    left: 100%; }
+  .col-md-offset-0 {
+    margin-left: 0%; }
+  .col-md-offset-1 {
+    margin-left: 8.33333%; }
+  .col-md-offset-2 {
+    margin-left: 16.66667%; }
+  .col-md-offset-3 {
+    margin-left: 25%; }
+  .col-md-offset-4 {
+    margin-left: 33.33333%; }
+  .col-md-offset-5 {
+    margin-left: 41.66667%; }
+  .col-md-offset-6 {
+    margin-left: 50%; }
+  .col-md-offset-7 {
+    margin-left: 58.33333%; }
+  .col-md-offset-8 {
+    margin-left: 66.66667%; }
+  .col-md-offset-9 {
+    margin-left: 75%; }
+  .col-md-offset-10 {
+    margin-left: 83.33333%; }
+  .col-md-offset-11 {
+    margin-left: 91.66667%; }
+  .col-md-offset-12 {
+    margin-left: 100%; } }
+
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left; }
+  .col-lg-1 {
+    width: 8.33333%; }
+  .col-lg-2 {
+    width: 16.66667%; }
+  .col-lg-3 {
+    width: 25%; }
+  .col-lg-4 {
+    width: 33.33333%; }
+  .col-lg-5 {
+    width: 41.66667%; }
+  .col-lg-6 {
+    width: 50%; }
+  .col-lg-7 {
+    width: 58.33333%; }
+  .col-lg-8 {
+    width: 66.66667%; }
+  .col-lg-9 {
+    width: 75%; }
+  .col-lg-10 {
+    width: 83.33333%; }
+  .col-lg-11 {
+    width: 91.66667%; }
+  .col-lg-12 {
+    width: 100%; }
+  .col-lg-pull-0 {
+    right: auto; }
+  .col-lg-pull-1 {
+    right: 8.33333%; }
+  .col-lg-pull-2 {
+    right: 16.66667%; }
+  .col-lg-pull-3 {
+    right: 25%; }
+  .col-lg-pull-4 {
+    right: 33.33333%; }
+  .col-lg-pull-5 {
+    right: 41.66667%; }
+  .col-lg-pull-6 {
+    right: 50%; }
+  .col-lg-pull-7 {
+    right: 58.33333%; }
+  .col-lg-pull-8 {
+    right: 66.66667%; }
+  .col-lg-pull-9 {
+    right: 75%; }
+  .col-lg-pull-10 {
+    right: 83.33333%; }
+  .col-lg-pull-11 {
+    right: 91.66667%; }
+  .col-lg-pull-12 {
+    right: 100%; }
+  .col-lg-push-0 {
+    left: auto; }
+  .col-lg-push-1 {
+    left: 8.33333%; }
+  .col-lg-push-2 {
+    left: 16.66667%; }
+  .col-lg-push-3 {
+    left: 25%; }
+  .col-lg-push-4 {
+    left: 33.33333%; }
+  .col-lg-push-5 {
+    left: 41.66667%; }
+  .col-lg-push-6 {
+    left: 50%; }
+  .col-lg-push-7 {
+    left: 58.33333%; }
+  .col-lg-push-8 {
+    left: 66.66667%; }
+  .col-lg-push-9 {
+    left: 75%; }
+  .col-lg-push-10 {
+    left: 83.33333%; }
+  .col-lg-push-11 {
+    left: 91.66667%; }
+  .col-lg-push-12 {
+    left: 100%; }
+  .col-lg-offset-0 {
+    margin-left: 0%; }
+  .col-lg-offset-1 {
+    margin-left: 8.33333%; }
+  .col-lg-offset-2 {
+    margin-left: 16.66667%; }
+  .col-lg-offset-3 {
+    margin-left: 25%; }
+  .col-lg-offset-4 {
+    margin-left: 33.33333%; }
+  .col-lg-offset-5 {
+    margin-left: 41.66667%; }
+  .col-lg-offset-6 {
+    margin-left: 50%; }
+  .col-lg-offset-7 {
+    margin-left: 58.33333%; }
+  .col-lg-offset-8 {
+    margin-left: 66.66667%; }
+  .col-lg-offset-9 {
+    margin-left: 75%; }
+  .col-lg-offset-10 {
+    margin-left: 83.33333%; }
+  .col-lg-offset-11 {
+    margin-left: 91.66667%; }
+  .col-lg-offset-12 {
+    margin-left: 100%; } }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.align-item-start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.align-item-baseline {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
+
+.align-item-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.openaccount-wrapper {
+  font-family: "psl_kittithada_probold";
+  position: relative;
+  background-color: #F1F1F1;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 70px;
+  -webkit-box-shadow: 0px 6px 6px #00000029;
+  box-shadow: 0px 6px 6px #00000029; }
+  .openaccount-wrapper * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .openaccount-wrapper *:before,
+  .openaccount-wrapper *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .openaccount-wrapper .border-default {
+    border: 1px solid #66666610;
+    margin: 0 0 25px; }
+  .openaccount-wrapper .title-topic {
+    font-family: "psl_kittithada_probold";
+    font-size: 32px;
+    line-height: 39px;
+    color: #666666;
+    margin-bottom: 25px; }
+    .openaccount-wrapper .title-topic.color-main {
+      color: #E30613; }
+    .openaccount-wrapper .title-topic.color-black {
+      color: #000; }
+  .openaccount-wrapper .desc {
+    font-family: "psl_kittithada_probold";
+    font-size: 24px;
+    line-height: 33px;
+    color: #000;
+    margin: 0; }
+  .openaccount-wrapper .list {
+    margin: 0 0 30px;
+    padding: 0 0 0 20px; }
+    .openaccount-wrapper .list li {
+      font-family: "psl_kittithada_probold";
+      font-size: 24px;
+      line-height: 33px;
+      color: #000;
+      margin-bottom: 10px; }
+      .openaccount-wrapper .list li:last-child {
+        margin-bottom: 0; }
+  .openaccount-wrapper .list-order {
+    margin: 15px 0 25px;
+    padding: 0;
+    list-style: none; }
+    .openaccount-wrapper .list-order li {
+      font-family: "psl_kittithada_probold";
+      font-size: 24px;
+      line-height: 26px;
+      color: #000;
+      padding-left: 20px;
+      position: relative; }
+      .openaccount-wrapper .list-order li::before {
+        content: ">";
+        display: block;
+        position: absolute;
+        color: #000;
+        left: 0;
+        top: -2px; }
+  .openaccount-wrapper .field-input {
+    margin-bottom: 30px; }
+    .openaccount-wrapper .field-input .title-field {
+      font-family: "psl_kittithada_probold";
+      font-size: 24px;
+      line-height: 26px;
+      color: #000000;
+      opacity: 0.8; }
+      .openaccount-wrapper .field-input .title-field .req {
+        color: #D02E26; }
+      .openaccount-wrapper .field-input .title-field .text-xl {
+        font-family: 'Tahoma';
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #000; }
+    .openaccount-wrapper .field-input .sub-field {
+      font-family: 'Tahoma';
+      font-size: 20px;
+      line-height: 24px;
+      color: #000; }
+      .openaccount-wrapper .field-input .sub-field .req {
+        color: #D02E26; }
+    .openaccount-wrapper .field-input .inp-text {
+      background-color: #fff;
+      height: 48px;
+      font-family: "psl_kittithada_probold";
+      font-size: 24px;
+      line-height: 26px;
+      color: #000000;
+      opacity: 0.5;
+      border: 1px solid #666;
+      padding: 0 15px;
+      width: 100%; }
+      .openaccount-wrapper .field-input .inp-text:focus {
+        outline: none; }
+    .openaccount-wrapper .field-input .text-under-field {
+      font-family: "psl_kittithada_probold";
+      font-size: 24px;
+      line-height: 26px;
+      color: #000;
+      margin: 5px 0; }
+    .openaccount-wrapper .field-input .group-inp {
+      position: relative; }
+      .openaccount-wrapper .field-input .group-inp .has-unit {
+        padding-right: 50px; }
+      .openaccount-wrapper .field-input .group-inp .unit {
+        position: absolute;
+        right: 20px;
+        top: 12px;
+        font-family: "psl_kittithada_probold";
+        font-size: 24px;
+        line-height: 26px;
+        color: #666; }
+    .openaccount-wrapper .field-input input[type="checkbox"] {
+      display: none; }
+    .openaccount-wrapper .field-input input[type="radio"] {
+      display: none; }
+    .openaccount-wrapper .field-input .text {
+      font-size: 24px;
+      line-height: 26px;
+      color: #00000099; }
+    .openaccount-wrapper .field-input input[type="checkbox"] + label {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 33px;
+      padding-left: 42px;
+      cursor: pointer;
+      background-image: url("../images/icon/inp_checkbox_default.svg");
+      background-repeat: no-repeat;
+      background-position: left center; }
+    .openaccount-wrapper .field-input input[type="checkbox"]:checked + label.text {
+      background-image: url("../images/icon/inp_checkbox_checked.svg");
+      color: #000000; }
+    .openaccount-wrapper .field-input input[type="radio"] + label {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: auto;
+      min-height: 33px;
+      padding-left: 42px;
+      cursor: pointer;
+      background-image: url("../images/icon/inp_radio_default.svg");
+      background-repeat: no-repeat;
+      background-position: left center; }
+    .openaccount-wrapper .field-input input[type="radio"]:checked + label.text {
+      background-image: url("../images/icon/inp_radio_checked.svg");
+      color: #000000; }
+  .openaccount-wrapper .head-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 2rem; }
+  .openaccount-wrapper .step ul {
+    margin: 0;
+    padding: 0; }
+    .openaccount-wrapper .step ul li {
+      list-style: none;
+      font-family: "psl_kittithada_probold";
+      font-size: 24px;
+      line-height: 26px;
+      color: #66666634;
+      padding: 7px 17px;
+      border: 1px solid #66666634;
+      border-radius: 24px;
+      text-transform: uppercase;
+      margin-right: 14px;
+      float: left; }
+      .openaccount-wrapper .step ul li.active {
+        color: #fff;
+        background-color: #E30613;
+        border: 1px solid #E30613; }
+      .openaccount-wrapper .step ul li:last-child {
+        margin-right: 0; }
+    .openaccount-wrapper .step ul:after {
+      content: '';
+      display: table;
+      clear: both; }
+  .openaccount-wrapper .title-main-page {
+    font-family: 'Tahoma';
+    font-size: 24px;
+    line-height: 29px;
+    color: #E30613;
+    font-weight: 700;
+    margin-bottom: 10px; }
+  .openaccount-wrapper .desc-main-page {
+    font-family: "psl_kittithada_probold";
+    font-size: 32px;
+    line-height: 39px;
+    color: #666666; }
+  .openaccount-wrapper .estimated {
+    background-color: #fff;
+    padding: 20px 35px;
+    margin-bottom: 30px; }
+    .openaccount-wrapper .estimated .field-input {
+      margin-bottom: 0; }
+      .openaccount-wrapper .estimated .field-input .inp-text {
+        border: none;
+        font-size: 48px;
+        line-height: 57px;
+        text-align: right; }
+  .openaccount-wrapper .condition {
+    max-height: 460px;
+    margin-bottom: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* Track */
+    /* Handle */
+    /* Handle on hover */ }
+    .openaccount-wrapper .condition::-webkit-scrollbar {
+      width: 5px; }
+    .openaccount-wrapper .condition::-webkit-scrollbar-track {
+      background: #fff; }
+    .openaccount-wrapper .condition::-webkit-scrollbar-thumb {
+      background: #E30613; }
+    .openaccount-wrapper .condition::-webkit-scrollbar-thumb:hover {
+      background: #555; }
+  .openaccount-wrapper .text-main-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .openaccount-wrapper .text-main-group.d-block {
+      display: block; }
+    .openaccount-wrapper .text-main-group .text {
+      font-family: 'Tahoma';
+      font-size: 20px;
+      line-height: 24px;
+      color: #000;
+      font-weight: 700; }
+      .openaccount-wrapper .text-main-group .text.text-xl {
+        font-size: 24px;
+        line-height: 29px; }
+      .openaccount-wrapper .text-main-group .text.text-left {
+        max-width: 630px;
+        padding-right: 30px; }
+      .openaccount-wrapper .text-main-group .text.text-right {
+        margin-bottom: 25px; }
+    .openaccount-wrapper .text-main-group p {
+      font-family: "psl_kittithada_probold";
+      font-size: 24px;
+      line-height: 26px;
+      color: #000;
+      margin: 25px 0 !important; }
+      .openaccount-wrapper .text-main-group p.text-xl {
+        font-family: 'Tahoma';
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #000;
+        margin: 25px 0 !important; }
+    @media only screen and (max-width: 767px) {
+      .openaccount-wrapper .text-main-group .text.text-left {
+        max-width: 70%; } }
+  .openaccount-wrapper .text-sub-group {
+    margin-bottom: 25px; }
+    .openaccount-wrapper .text-sub-group .list-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-bottom: 10px; }
+    .openaccount-wrapper .text-sub-group .text {
+      font-family: "psl_kittithada_probold";
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 700; }
+      .openaccount-wrapper .text-sub-group .text.text-left {
+        max-width: 700px;
+        padding-right: 30px;
+        color: #000000;
+        opacity: 0.8; }
+      .openaccount-wrapper .text-sub-group .text.text-right {
+        color: #666; }
+      .openaccount-wrapper .text-sub-group .text .req {
+        color: #E30613; }
+    @media only screen and (max-width: 767px) {
+      .openaccount-wrapper .text-sub-group .text.text-left {
+        max-width: 70%; } }
+  .openaccount-wrapper .title-part-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 25px; }
+    .openaccount-wrapper .title-part-group .text-part {
+      font-family: 'Tahoma';
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #fff;
+      background-color: #E30613;
+      padding: 5px 10px;
+      margin-right: 10px; }
+    .openaccount-wrapper .title-part-group .text-desc {
+      font-family: 'Tahoma';
+      font-size: 20px;
+      line-height: 24px;
+      color: #000; }
+      .openaccount-wrapper .title-part-group .text-desc span {
+        font-family: "psl_kittithada_probold";
+        font-size: 24px;
+        line-height: 29px;
+        color: #666; }
+  .openaccount-wrapper .success-wrapper {
+    text-align: center; }
+    .openaccount-wrapper .success-wrapper .text {
+      font-family: 'Tahoma';
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 700;
+      color: #23AF6E;
+      margin: 0 0 10px; }
+      .openaccount-wrapper .success-wrapper .text.font-web {
+        font-family: "psl_kittithada_probold";
+        font-size: 32px;
+        line-height: 39px;
+        color: #000; }
+    .openaccount-wrapper .success-wrapper .image {
+      margin: 100px 0; }
+  .openaccount-wrapper .group-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .openaccount-wrapper .group-btn .btn {
+      margin: 40px 0; }
+  .openaccount-wrapper .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 340px;
+    width: 100%;
+    margin: 40px auto;
+    color: #fff;
+    font-family: "psl_kittithada_probold";
+    font-size: 32px;
+    line-height: 39px;
+    border: none; }
+    .openaccount-wrapper .btn.bg-gray {
+      background-color: #666666; }
+    .openaccount-wrapper .btn.bg-red {
+      background-color: #E30613; }
+  @media only screen and (max-width: 991px) {
+    .openaccount-wrapper .head-page.m-reverse {
+      -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse; }
+      .openaccount-wrapper .head-page.m-reverse .step {
+        margin-bottom: 20px; }
+    .openaccount-wrapper .head-page .left .title-main-page {
+      margin-bottom: 10px; }
+    .openaccount-wrapper .head-page .left .desc-main-page {
+      font-size: 32px;
+      line-height: 32px; } }
+  @media only screen and (max-width: 767px) {
+    .openaccount-wrapper .field-input {
+      margin-bottom: 20px; }
+    .openaccount-wrapper .estimated {
+      padding: 10px 20px; }
+      .openaccount-wrapper .estimated .field-input .inp-text {
+        text-align: left;
+        padding: 0; }
+    .openaccount-wrapper .btn {
+      max-width: 240px; } }
+  @media only screen and (max-width: 575px) {
+    .openaccount-wrapper .head-page .left, .openaccount-wrapper .head-page .right {
+      width: 100%; }
+    .openaccount-wrapper .step ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .openaccount-wrapper .step ul li {
+        margin: 0;
+        margin-bottom: 15px;
+        margin-right: 15px;
+        width: 47%; }
+        .openaccount-wrapper .step ul li:nth-child(2n) {
+          margin-right: 0; }
+    .openaccount-wrapper .group-btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .openaccount-wrapper .group-btn .btn {
+        margin: 10px 0; }
+        .openaccount-wrapper .group-btn .btn:first-of-type {
+          margin-top: 30px; } }
